@@ -15,7 +15,7 @@ function handleKeyPress(event) {
     }
 
     function removePlaying(event) {
-        if(event.propertyName == 'transform') {
+        if(event.target.classList.contains('playing')) {
             event.target.classList.remove('playing');
         }
 
